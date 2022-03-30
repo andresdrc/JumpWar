@@ -6,26 +6,34 @@ var centro_presionado = false
 signal apuntar(direccion)
 signal no_apuntar
 
-func _ready():
-	pass
+var index_apuntar
+var index_mover
+
+onready var pos_ini_pad = $Centro.global_position
+
 
 func _on_Area2D_input_event(viewport, event, shape_idx):
 	if event is InputEventScreenTouch:
 		if event.is_pressed():
+			emit_signal("apuntar",0.0)
 			centro_presionado = true
-			
+			index_apuntar = event.index
+
 
 func _input(event):
+	
 	if event is InputEventScreenDrag and centro_presionado:
-		var direccion_pad = event.relative.normalized()
-		centro.position += direccion_pad
-		centro.position.x = clamp(centro.position.x, -50, 50)
-		centro.position.y = clamp(centro.position.y,-50, 50)
-#		centro.position.x = clamp(centro.position.x, -(50 - centro.position.y * centro.position.y),(50 - centro.position.y * centro.position.y))
-#		centro.position.y = clamp(centro.position.y, -(50 - centro.position.x * centro.position.x),(50 - centro.position.x * centro.position.x))
-		emit_signal("apuntar",direccion_pad)
+		if event.get_index() == index_apuntar:
+			centro.global_position = event.position
+			
+			centro.position.x = clamp(centro.position.x, -50, 50)
+			centro.position.y = clamp(centro.position.y,-50, 50)
+			
+			var direccion_pad = rad2deg(Vector2.ZERO.angle_to_point(pos_ini_pad - event.position))
+			emit_signal("apuntar",direccion_pad)
+			
 	if event is InputEventScreenTouch :
-		if !event.is_pressed() and centro_presionado:
+		if !event.is_pressed() and centro_presionado and event.index == index_apuntar:
 			centro_presionado = false
 			centro.position = Vector2.ZERO
 			emit_signal("no_apuntar")

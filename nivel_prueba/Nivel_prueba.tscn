@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://mundo/Mundo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/Ui.tscn" type="PackedScene" id=3]
+[ext_resource path="res://item/Item_uno.tscn" type="PackedScene" id=4]
+[ext_resource path="res://item/Bala_uno.tscn" type="PackedScene" id=5]
 
 [node name="Nivel_prueba" type="Node2D"]
 
@@ -12,3 +14,9 @@
 position = Vector2( 364, 50 )
 
 [node name="Botones" parent="." instance=ExtResource( 3 )]
+
+[node name="Item_uno" parent="." instance=ExtResource( 4 )]
+position = Vector2( 155, 599 )
+
+[node name="Bala_uno" parent="." instance=ExtResource( 5 )]
+position = Vector2( 260, 770 )
