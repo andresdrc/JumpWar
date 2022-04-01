@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://mundo/Mundo.tscn" type="PackedScene" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://ui/Ui.tscn" type="PackedScene" id=3]
-[ext_resource path="res://item/Item_uno.tscn" type="PackedScene" id=4]
-[ext_resource path="res://item/Bala_uno.tscn" type="PackedScene" id=5]
+[ext_resource path="res://item/item_uno/Item_uno.tscn" type="PackedScene" id=4]
+[ext_resource path="res://item/item_dos/item_dos.tscn" type="PackedScene" id=5]
+[ext_resource path="res://item/item_tres/Item_tres.tscn" type="PackedScene" id=6]
 
 [node name="Nivel_prueba" type="Node2D"]
 
@@ -18,5 +19,32 @@ position = Vector2( 364, 50 )
 [node name="Item_uno" parent="." instance=ExtResource( 4 )]
 position = Vector2( 155, 599 )
 
-[node name="Bala_uno" parent="." instance=ExtResource( 5 )]
-position = Vector2( 260, 770 )
+[node name="Item_uno2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 201, 186 )
+
+[node name="Item_uno3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 535, 558 )
+
+[node name="Item_dos" parent="." instance=ExtResource( 5 )]
+position = Vector2( 100, 387 )
+scale = Vector2( 3.08968, 3.08968 )
+
+[node name="Item_dos2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 551, 148 )
+scale = Vector2( 3.08968, 3.08968 )
+
+[node name="Item_dos3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 50, 762 )
+scale = Vector2( 3.08968, 3.08968 )
+
+[node name="Item_tres" parent="." instance=ExtResource( 6 )]
+position = Vector2( 273, 527 )
+scale = Vector2( 2.99186, 2.99186 )
+
+[node name="Item_tres2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 556, 778 )
+scale = Vector2( 2.99186, 2.99186 )
+
+[node name="Item_tres3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 277, 180 )
+scale = Vector2( 2.99186, 2.99186 )
