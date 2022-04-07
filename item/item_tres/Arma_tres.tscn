@@ -4,14 +4,15 @@
 [ext_resource path="res://item/item_tres/arma_tres.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 19.7583
 
 [node name="Arma_tres" type="RigidBody2D" groups=["arma_tres"]]
-collision_layer = 6
-collision_mask = 6
+collision_layer = 4
+collision_mask = 2
+gravity_scale = 3.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.560672, 0.560672 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

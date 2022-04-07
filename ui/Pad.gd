@@ -36,4 +36,6 @@ func _input(event):
 			centro_presionado = false
 			centro.position = Vector2.ZERO
 			emit_signal("no_apuntar",-(pos_ini_pad - event.position).normalized())
+			get_parent().cola_armas.pop_back()
+			get_parent().actualizar_armas_obtenidas()
 			

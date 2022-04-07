@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 export var vel_avanzar = 300
-var fuerza_salto = 900
+export var fuerza_salto = 900
 export var gravedad = 1500
 var direccion = Vector2.ZERO
 
@@ -19,7 +19,6 @@ signal item_dos_obtenido
 signal item_tres_obtenido
 
 var pila_armas = []
-
 var arma_uno = preload("res://item/item_uno/Arma_uno.tscn")
 var arma_dos = preload("res://item/item_dos/Arma_dos.tscn")
 var arma_tres = preload("res://item/item_tres/Arma_tres.tscn")
@@ -42,10 +41,11 @@ func _physics_process(delta):
 
 	direccion = move_and_slide(direccion, Vector2.UP, true, 4, 0.7853, true)
 
-func _process(delta):
 
+func _process(delta):
 	sprt_apuntar.rotation_degrees = rot_apuntar
-	
+
+
 func _no_apuntar(dir):
 	sprt_apuntar.visible = false
 	
@@ -60,39 +60,65 @@ func _apuntar(rot):
 	sprt_apuntar.visible = true
 	rot_apuntar = rot
 
+
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("item_uno"):
-		emit_signal("item_uno_obtenido")
-		var nodo = arma_uno.instance()
-		pila_armas.append(nodo)
-		area.queue_free()
+		if pila_armas.size() <= 3 :
+			emit_signal("item_uno_obtenido")
+			var nodo = arma_uno.instance()
+			pila_armas.append(nodo)
+			area.queue_free()
 	if area.is_in_group("item_dos"):
-		emit_signal("item_dos_obtenido")
-		var nodo = arma_dos.instance()
-		pila_armas.append(nodo)
-		area.queue_free()
+		if pila_armas.size() <= 3 :
+			emit_signal("item_dos_obtenido")
+			var nodo = arma_dos.instance()
+			pila_armas.append(nodo)
+			area.queue_free()
 	if area.is_in_group("item_tres"):
-		emit_signal("item_tres_obtenido")
-		var nodo = arma_tres.instance()
-		pila_armas.append(nodo)
-		area.queue_free()
-
+		if pila_armas.size() <= 3 :
+			emit_signal("item_tres_obtenido")
+			var nodo = arma_tres.instance()
+			pila_armas.append(nodo)
+			area.queue_free()
 
 
 func _on_Area2D_body_entered(body):
-	print("shoiusiuysiusius")
 	if body.is_in_group("arma_uno"):
-		salud -= 25
-		barra_salud.value = salud
+		stun()
 		body.queue_free()
 	if body.is_in_group("arma_dos"):
-		emit_signal("item_dos_obtenido")
-		var nodo = arma_dos.instance()
-		pila_armas.append(nodo)
+		inmovil()
 		body.queue_free()
 	if body.is_in_group("arma_tres"):
-		emit_signal("item_tres_obtenido")
-		var nodo = arma_tres.instance()
-		pila_armas.append(nodo)
+		salud -= 45
+		barra_salud.value = salud
 		body.queue_free()
+
+func stun():
+	var vel_ini = vel_avanzar
+	var fuerza_salto_ini = fuerza_salto
+	var gravedad_ini = gravedad
+	
+	vel_avanzar -= (vel_avanzar/3) * 2
+	fuerza_salto -= (fuerza_salto/3) * 2
+	
+	yield(get_tree().create_timer(4),"timeout")
+	
+	vel_avanzar = vel_ini
+	fuerza_salto = fuerza_salto_ini
+	gravedad = gravedad_ini
+	
+func inmovil():
+	var vel_ini = vel_avanzar
+	var fuerza_salto_ini = fuerza_salto
+	var gravedad_ini = gravedad
+	
+	vel_avanzar = 0
+	fuerza_salto = 0
+	
+	yield(get_tree().create_timer(4),"timeout")
+	
+	vel_avanzar = vel_ini
+	fuerza_salto = fuerza_salto_ini
+	gravedad = gravedad_ini
 

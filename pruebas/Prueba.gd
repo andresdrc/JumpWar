@@ -1,26 +1,12 @@
 extends Node2D
 
 
+var cola = [1,2,3,4,5]
 
-func _on_Area2D_input_event(viewport, event, shape_idx):
-#	print(event.as_text())
+func _ready():
 	pass
 
-
-func _on_TextureButton_pressed():
-	print("texture button")
-
-
-func _on_TextureButton_toggled(button_pressed):
-	print("TOOGLE button")
-	pass # Replace with function body.
-
-
-func _on_TouchScreenButton_pressed():
-	print("PRESSED button")
-	pass # Replace with function body.
-
-
-func _on_TouchScreenButton_released():
-	print("RELEASED button")
-	pass # Replace with function body.
+func _input(event):
+	if Input.is_action_just_pressed("jump"):
+		for i in cola.invert():
+			print(i)

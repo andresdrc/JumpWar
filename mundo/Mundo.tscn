@@ -8,8 +8,8 @@ extents = Vector2( 8, 8 )
 [node name="Mundo" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 301, 839 )
-scale = Vector2( 38.5486, 1.98859 )
+position = Vector2( 538, 1946 )
+scale = Vector2( 67.9886, 1.98859 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -21,9 +21,9 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="."]
-position = Vector2( -17, 201 )
+position = Vector2( -17, 1034 )
 rotation = 1.57079
-scale = Vector2( 102.669, 1.98859 )
+scale = Vector2( 174.269, 1.98859 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -35,9 +35,9 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D8" type="StaticBody2D" parent="."]
-position = Vector2( 615, 201 )
+position = Vector2( 1096, 1037 )
 rotation = 1.57079
-scale = Vector2( 102.669, 1.98859 )
+scale = Vector2( 174.269, 1.98859 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -49,7 +49,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-position = Vector2( 156, 660 )
+position = Vector2( 137, 1718 )
 scale = Vector2( 8.02859, 1.98859 )
 __meta__ = {
 "_edit_group_": true
@@ -62,7 +62,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
-position = Vector2( 529, 638 )
+position = Vector2( 880, 1733 )
 scale = Vector2( 8.02859, 1.98859 )
 __meta__ = {
 "_edit_group_": true
@@ -75,7 +75,7 @@ texture = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
-position = Vector2( 75.0001, 455 )
+position = Vector2( 342, 1090 )
 scale = Vector2( 8.02859, 1.98859 )
 __meta__ = {
 "_edit_group_": true
@@ -87,8 +87,47 @@ texture = ExtResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
 shape = SubResource( 1 )
 
+[node name="StaticBody2D10" type="StaticBody2D" parent="."]
+position = Vector2( 530, 1450 )
+scale = Vector2( 8.02859, 1.98859 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D10"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D10"]
+shape = SubResource( 1 )
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="."]
+position = Vector2( 154, 652 )
+scale = Vector2( 8.02859, 1.98859 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D9"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
+shape = SubResource( 1 )
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="."]
+position = Vector2( 901, 837 )
+scale = Vector2( 8.02859, 1.98859 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D11"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D11"]
+shape = SubResource( 1 )
+
 [node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2( 533, 209 )
+position = Vector2( 959, 1230 )
 scale = Vector2( 8.02859, 1.98859 )
 __meta__ = {
 "_edit_group_": true
@@ -111,4 +150,17 @@ __meta__ = {
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+shape = SubResource( 1 )
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="."]
+position = Vector2( 748, 386 )
+scale = Vector2( 8.02859, 1.98859 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="StaticBody2D12"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D12"]
 shape = SubResource( 1 )
