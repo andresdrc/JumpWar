@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://ui/Botones.gd" type="Script" id=1]
 [ext_resource path="res://ui/kisspng-arrow-icon-wind-science-and-technology-blue-double-arrow-mate-5a71ae78cb1462.2438194615173996728318.png" type="Texture" id=2]
 [ext_resource path="res://ui/Pad.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ui/5a1c7851499b82.6138658315118152493015.png" type="Texture" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
 
 [sub_resource type="StreamTexture" id=4]
 flags = 4
@@ -19,28 +20,31 @@ scale = Vector2( 0.232958, 0.432958 )
 texture = ExtResource( 2 )
 
 [node name="Boton_salto" type="TouchScreenButton" parent="."]
-position = Vector2( 751, 2302 )
+position = Vector2( 298, 1010 )
 rotation = -1.5708
-scale = Vector2( 0.0353934, 0.068236 )
+scale = Vector2( 0.0238122, 0.0337015 )
 normal = ExtResource( 4 )
 
 [node name="Pad" parent="." instance=ExtResource( 3 )]
-position = Vector2( 933, 1888 )
-scale = Vector2( 1.14693, 1.14693 )
+position = Vector2( 511, 933 )
+scale = Vector2( 0.608909, 0.608909 )
 
 [node name="Btn_der" type="TouchScreenButton" parent="."]
-position = Vector2( 342, 2056 )
-scale = Vector2( 0.0411391, 0.0822782 )
+position = Vector2( 151, 897 )
+scale = Vector2( 0.0214852, 0.0349555 )
 normal = ExtResource( 4 )
 
 [node name="Btn_izq" type="TouchScreenButton" parent="."]
-position = Vector2( 304, 2058 )
-scale = Vector2( -0.0411153, 0.0822305 )
+position = Vector2( 149, 893 )
+scale = Vector2( -0.0218085, 0.0356819 )
 normal = SubResource( 4 )
 
 [node name="BarraItems" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 1.0
+margin_top = 12.0
+margin_right = 41.0
+margin_bottom = 52.0
+rect_scale = Vector2( 0.634914, 0.455363 )
 
 [node name="MarginContainer" type="MarginContainer" parent="BarraItems"]
 margin_right = 480.0
@@ -87,9 +91,14 @@ margin_right = 403.0
 margin_bottom = 116.0
 expand = true
 
+[node name="Btn_menu" type="TouchScreenButton" parent="."]
+position = Vector2( 520, 25 )
+normal = ExtResource( 5 )
+
 [connection signal="pressed" from="Boton_salto" to="." method="_on_Boton_salto_pressed"]
 [connection signal="released" from="Boton_salto" to="." method="_on_Boton_salto_released"]
 [connection signal="pressed" from="Btn_der" to="." method="_on_Btn_der_pressed"]
 [connection signal="released" from="Btn_der" to="." method="_on_Btn_der_released"]
 [connection signal="pressed" from="Btn_izq" to="." method="_on_Btn_izq_pressed"]
 [connection signal="released" from="Btn_izq" to="." method="_on_Btn_izq_released"]
+[connection signal="pressed" from="Btn_menu" to="." method="_on_Btn_menu_pressed"]

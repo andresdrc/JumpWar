@@ -84,9 +84,13 @@ func _on_Btn_der_released():
 	Input.action_release("move_right")
 
 
+
 func _on_Btn_izq_pressed():
 	Input.action_press("move_left",1.0)
 func _on_Btn_izq_released():
 	Input.action_release("move_left")
 
+
+func _on_Btn_menu_pressed():
+	get_tree().change_scene("res://Menu_inicio/Menu_inicio.tscn")
 

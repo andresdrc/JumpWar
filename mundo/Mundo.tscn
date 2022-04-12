@@ -6,6 +6,7 @@
 extents = Vector2( 8, 8 )
 
 [node name="Mundo" type="Node2D"]
+scale = Vector2( 0.557453, 0.422373 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( 538, 1946 )

@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://niveles/niveles_L/level2/parallax_ovni.jpg" type="Texture" id=1]
+[ext_resource path="res://niveles/niveles_L/level2/Level2.gd" type="Script" id=2]
+[ext_resource path="res://niveles/niveles_L/transportador/Transportador.tscn" type="PackedScene" id=3]
+[ext_resource path="res://niveles/niveles_L/base/Base.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui/Ui.tscn" type="PackedScene" id=5]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=6]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -2, -2, 0, 0, 0, 0, 599, 3 )
+}
+
+[node name="Level2" type="Node2D"]
+position = Vector2( -4, 2 )
+script = ExtResource( 2 )
+Transportador = ExtResource( 3 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background"]
+motion_mirroring = Vector2( 0, 800 )
+
+[node name="Sprite" type="Sprite" parent="Background/ParallaxLayer"]
+scale = Vector2( 1.196, 1 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="TransportadorTimer" type="Timer" parent="."]
+
+[node name="TransportadorPath" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="TransportadorSpawn" type="PathFollow2D" parent="TransportadorPath"]
+position = Vector2( -2, -2 )
+rotation = 0.00444444
+
+[node name="Base" parent="." instance=ExtResource( 4 )]
+position = Vector2( 21, -118 )
+scale = Vector2( 1.21292, 1.08348 )
+
+[node name="Botones" parent="." instance=ExtResource( 5 )]
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 239, 355 )
+
+[connection signal="timeout" from="TransportadorTimer" to="." method="_on_TransportadorTimer_timeout"]

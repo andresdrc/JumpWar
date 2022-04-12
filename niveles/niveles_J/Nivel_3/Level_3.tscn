@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://niveles/niveles_J/Nivel_3/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg" type="Texture" id=1]
+[ext_resource path="res://niveles/niveles_J/Nivel_3/Level_3.gd" type="Script" id=2]
+[ext_resource path="res://niveles/niveles_J/Transportador_1/Transportador.tscn" type="PackedScene" id=3]
+[ext_resource path="res://niveles/niveles_J/Base.tscn" type="PackedScene" id=4]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://ui/Ui.tscn" type="PackedScene" id=6]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 598, 2 )
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 145.585, 17.4999 )
+
+[node name="Level_3" type="Node2D"]
+script = ExtResource( 2 )
+Transportador = ExtResource( 3 )
+
+[node name="Background_T" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background_T"]
+motion_mirroring = Vector2( 0, 1024 )
+
+[node name="Sprite" type="Sprite" parent="Background_T/ParallaxLayer"]
+scale = Vector2( 1, 1.04694 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="TransportadorTimer" type="Timer" parent="."]
+
+[node name="TransportadorPath" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="TransportadorPathFollow" type="PathFollow2D" parent="TransportadorPath"]
+position = Vector2( 2, 3 )
+rotation = -0.00167781
+
+[node name="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 22, 793 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D/StaticBody2D"]
+position = Vector2( 137.316, 25.8619 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 285, 132 )
+
+[node name="Botones" parent="." instance=ExtResource( 6 )]
+
+[connection signal="timeout" from="TransportadorTimer" to="." method="_on_TransportadorTimer_timeout"]

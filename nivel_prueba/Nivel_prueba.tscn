@@ -10,39 +10,39 @@
 [node name="Nivel_prueba" type="Node2D"]
 
 [node name="Mundo" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 0.560064, 0.430735 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 606, 1779 )
-scale = Vector2( 1.94984, 1.94984 )
+position = Vector2( 369, 489 )
 vel_avanzar = 500
 fuerza_salto = 1200
 gravedad = 1600
 
-[node name="Botones" parent="." instance=ExtResource( 3 )]
-
 [node name="Item_uno" parent="." instance=ExtResource( 4 )]
-position = Vector2( 155, 599 )
+position = Vector2( 189, 384 )
 
 [node name="Item_uno2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 955, 1717 )
+position = Vector2( 426, 71 )
 
 [node name="Item_uno3" parent="." instance=ExtResource( 4 )]
-position = Vector2( 870, 1410 )
+position = Vector2( 557, 474 )
 
 [node name="Item_dos" parent="." instance=ExtResource( 5 )]
-position = Vector2( 159, 1442 )
+position = Vector2( 195, 294 )
 
 [node name="Item_dos2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 907, 474 )
+position = Vector2( 513, 303 )
 
 [node name="Item_dos3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 991, 465 )
+position = Vector2( 513, 693 )
 
 [node name="Item_tres" parent="." instance=ExtResource( 6 )]
 position = Vector2( 243, 137 )
 
 [node name="Item_tres2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 120, 1842 )
+position = Vector2( 156, 694 )
 
 [node name="Item_tres3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 387, 947 )
+position = Vector2( 86, 220 )
+
+[node name="Botones" parent="." instance=ExtResource( 3 )]

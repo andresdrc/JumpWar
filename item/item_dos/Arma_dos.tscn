@@ -4,7 +4,7 @@
 [ext_resource path="res://item/item_dos/arma_dos.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 16.4194
+radius = 8.09055
 
 [node name="arma_dos" type="RigidBody2D" groups=["arma_dos"]]
 collision_layer = 4
@@ -13,6 +13,7 @@ gravity_scale = 3.0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

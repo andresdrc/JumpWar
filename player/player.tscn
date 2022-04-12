@@ -24,7 +24,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 26.3156
+radius = 31.3156
 
 [sub_resource type="CapsuleShape2D" id=3]
 radius = 44.0

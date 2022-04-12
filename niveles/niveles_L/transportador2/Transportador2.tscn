@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://niveles/niveles_L/transportador/Transportador.gd" type="Script" id=1]
+[ext_resource path="res://niveles/niveles_L/transportador/trans1.2.png" type="Texture" id=2]
+[ext_resource path="res://niveles/niveles_L/transportador/trans1.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Animac",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 218, 19 )
+
+[node name="Transportador" type="Node2D" groups=["Transportador"]]
+scale = Vector2( 0.5, 0.25 )
+script = ExtResource( 1 )
+mover_a = Vector2( 0, 3 )
+tama_cell = Vector2( 64, 64 )
+velocidad = 100.0
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 1 )
+animation = "Animac"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -5, -72 )
+shape = SubResource( 2 )
+
+[node name="MoviTween" type="Tween" parent="."]
+repeat = true
+playback/repeat = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
