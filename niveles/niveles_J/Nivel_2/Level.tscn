@@ -3,7 +3,8 @@
 [ext_resource path="res://niveles/niveles_J/Nivel_2/Level.gd" type="Script" id=1]
 [ext_resource path="res://niveles/niveles_J/Plataforma_1/Plataforma.tscn" type="PackedScene" id=2]
 [ext_resource path="res://niveles/niveles_J/Nivel_2/the-mysterious-starry-space-illustration-free-vector.jpg" type="Texture" id=3]
-[ext_resource path="res://niveles/niveles_J/Base.tscn" type="PackedScene" id=4]
+[ext_resource path="res://niveles/niveles_J/base_2/Base.tscn" type="PackedScene" id=4]
+
 
 [sub_resource type="Curve2D" id=1]
 _data = {

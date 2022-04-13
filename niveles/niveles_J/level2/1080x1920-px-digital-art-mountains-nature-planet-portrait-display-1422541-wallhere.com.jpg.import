@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg-5365819fe68722b9a5cbf03d08803e74.stex"
+path="res://.import/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg-ff7c0de5447428a7571ff67dece2d7aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_L/level3/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg"
-dest_files=[ "res://.import/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg-5365819fe68722b9a5cbf03d08803e74.stex" ]
+source_file="res://niveles/niveles_J/level2/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg"
+dest_files=[ "res://.import/1080x1920-px-digital-art-mountains-nature-planet-portrait-display-1422541-wallhere.com.jpg-ff7c0de5447428a7571ff67dece2d7aa.stex" ]
 
 [params]
 

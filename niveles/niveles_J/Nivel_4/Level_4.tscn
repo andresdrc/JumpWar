@@ -4,9 +4,10 @@
 [ext_resource path="res://niveles/niveles_J/Nivel_4/Level_4.gd" type="Script" id=2]
 [ext_resource path="res://niveles/niveles_J/Plataforma_1/Plataforma.tscn" type="PackedScene" id=3]
 [ext_resource path="res://niveles/niveles_J/Transportador_1/Transportador.tscn" type="PackedScene" id=4]
-[ext_resource path="res://niveles/niveles_J/Base.tscn" type="PackedScene" id=5]
+[ext_resource path="res://niveles/niveles_J/base_2/Base.tscn" type="PackedScene" id=5]
 [ext_resource path="res://ui/Ui.tscn" type="PackedScene" id=6]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=7]
+
 
 [sub_resource type="Curve2D" id=1]
 _data = {

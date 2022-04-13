@@ -15,5 +15,6 @@ func _on_TransportadorTimer_timeout():
 	var transportador = Transportador.instance()
 	add_child(transportador)
 	transportador.position = get_node("TransportadorPath/TransportadorSpawn").position
-	$TransportadorTimer.wait_time = GLOBAL.random(2, 4)
+	$TransportadorTimer.wait_time = Global
+	.random(2, 4)
 	$TransportadorTimer.start()
