@@ -21,7 +21,7 @@ func _init_twen() -> void:
 	var ran = RandomNumberGenerator.new()
 	ran.randomize()
 	var num= int (ran.randf_range(1.0,3.0))
-	print(num)
+	
 	mover_a = mover_a * tama_cell 
 	var durac = mover_a.length() / velocidadT 
 	

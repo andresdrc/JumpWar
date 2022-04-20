@@ -15,7 +15,7 @@ func _on_TPTimer_timeout():
 	var ran = RandomNumberGenerator.new()
 	ran.randomize()
 	var num= int (ran.randf_range(1.0,3.0))
-	print('estoes una prueba')
+	
 	if  num==1.0:
 		get_node("TPPath/TPPathFollow").set_offset(randi())
 		var plataforma = Plataforma.instance()
