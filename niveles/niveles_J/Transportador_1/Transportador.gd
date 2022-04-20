@@ -24,16 +24,14 @@ func _init_twen() -> void:
 	print(num)
 	mover_a = mover_a * tama_cell 
 	var durac = mover_a.length() / velocidadT 
-	tween.interpolate_property(self,"seguir", Vector2.ZERO, mover_a,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, dur_inact)
-	tween.interpolate_property(self,"seguir", mover_a, Vector2.ZERO,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, durac + dur_inact * 2)
+	
 	if num == 1.0:
 		tween.interpolate_property(self,"seguir", Vector2.ZERO, mover_a,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, dur_inact)
 		tween.interpolate_property(self,"seguir", mover_a, Vector2.ZERO,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, durac + dur_inact * 2)
-		print("izquierda")
+
 	else:
 		tween.interpolate_property(self,"seguir", Vector2.ZERO, -mover_a,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, dur_inact)
 		tween.interpolate_property(self,"seguir", -mover_a, Vector2.ZERO,durac,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT, durac + dur_inact * 2)
-		print('derecha')
 	
 	tween.start()
 
