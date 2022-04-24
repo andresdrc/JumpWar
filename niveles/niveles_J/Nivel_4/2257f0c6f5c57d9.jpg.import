@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2257f0c6f5c57d9.jpg-36b0a2c1eb2bdb8fd1af5f948ae29c4c.stex"
+path="res://.import/2257f0c6f5c57d9.jpg-f77ea538a94fa5003710d13ba8556e9f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/Nivel_4/2257f0c6f5c57d9.jpg"
-dest_files=[ "res://.import/2257f0c6f5c57d9.jpg-36b0a2c1eb2bdb8fd1af5f948ae29c4c.stex" ]
+source_file="res://niveles/niveles_J/nivel_4/2257f0c6f5c57d9.jpg"
+dest_files=[ "res://.import/2257f0c6f5c57d9.jpg-f77ea538a94fa5003710d13ba8556e9f.stex" ]
 
 [params]
 

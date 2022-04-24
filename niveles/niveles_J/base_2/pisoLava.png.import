@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roka3.png-97ac11e1b9ba5f910e7040e336aa9ad5.stex"
+path="res://.import/pisoLava.png-efc02e951d720baaffa9aadb26687b3a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/base_2/roka3.png"
-dest_files=[ "res://.import/roka3.png-97ac11e1b9ba5f910e7040e336aa9ad5.stex" ]
+source_file="res://niveles/niveles_J/base_2/pisoLava.png"
+dest_files=[ "res://.import/pisoLava.png-efc02e951d720baaffa9aadb26687b3a.stex" ]
 
 [params]
 

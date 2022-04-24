@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parallax_ovni.jpg-18787c0ccaf384296e3f94187efa3b50.stex"
+path="res://.import/trans1.png-edaeb102d8d9401ddecb5ca28596cee6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/level2/parallax_ovni.jpg"
-dest_files=[ "res://.import/parallax_ovni.jpg-18787c0ccaf384296e3f94187efa3b50.stex" ]
+source_file="res://niveles/niveles_J/transportador_3/trans1.png"
+dest_files=[ "res://.import/trans1.png-edaeb102d8d9401ddecb5ca28596cee6.stex" ]
 
 [params]
 

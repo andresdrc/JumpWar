@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg-1b68e56ab65a022d0cde58e8d7774608.stex"
+path="res://.import/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg-dc2908a63e40c2165c2730faf5bb689d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/Nivel_4/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg"
-dest_files=[ "res://.import/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg-1b68e56ab65a022d0cde58e8d7774608.stex" ]
+source_file="res://niveles/niveles_J/nivel_4/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg"
+dest_files=[ "res://.import/space-with-stars-universe-space-infinity-and-starlight-background-starry-night-sky-galaxy-and-planets-in-cosmos-pattern-vector.jpg-dc2908a63e40c2165c2730faf5bb689d.stex" ]
 
 [params]
 
