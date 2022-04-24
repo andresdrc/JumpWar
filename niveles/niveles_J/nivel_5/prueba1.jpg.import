@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trans1.2.png-6c030bdd466ecf5080b30cfcfcb4a7aa.stex"
+path="res://.import/prueba1.jpg-2db79951acd3a784925b7736add835cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/transportador/trans1.2.png"
-dest_files=[ "res://.import/trans1.2.png-6c030bdd466ecf5080b30cfcfcb4a7aa.stex" ]
+source_file="res://niveles/niveles_J/nivel_5/prueba1.jpg"
+dest_files=[ "res://.import/prueba1.jpg-2db79951acd3a784925b7736add835cc.stex" ]
 
 [params]
 

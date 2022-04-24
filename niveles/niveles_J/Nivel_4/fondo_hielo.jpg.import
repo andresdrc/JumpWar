@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fondo_hielo.jpg-0e0a724fddc09e22307278dd6b65afbc.stex"
+path="res://.import/fondo_hielo.jpg-1d36684441dcc93bac381f07e0c6aba7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/Nivel_4/fondo_hielo.jpg"
-dest_files=[ "res://.import/fondo_hielo.jpg-0e0a724fddc09e22307278dd6b65afbc.stex" ]
+source_file="res://niveles/niveles_J/nivel_4/fondo_hielo.jpg"
+dest_files=[ "res://.import/fondo_hielo.jpg-1d36684441dcc93bac381f07e0c6aba7.stex" ]
 
 [params]
 

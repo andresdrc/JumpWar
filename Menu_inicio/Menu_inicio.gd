@@ -7,12 +7,12 @@ func _on_Button_pressed():
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://niveles/niveles_J/Nivel_3/Level_3.tscn")
+	get_tree().change_scene("res://niveles/niveles_J/nivel_3/Level_3.tscn")
 
 
 func _on_Button3_pressed():
-	get_tree().change_scene("res://niveles/niveles_J/level2/Level2.tscn")
+	get_tree().change_scene("res://niveles/niveles_J/nivel_5/Level2.tscn")
 
 
 func _on_Button4_pressed():
-	get_tree().change_scene("res://niveles/niveles_J/level3/Level3.tscn")
+	get_tree().change_scene("res://niveles/niveles_J/nivel_6/Level3.tscn")

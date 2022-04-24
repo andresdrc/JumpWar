@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roka3.png-990b423c7a68704efabbeb67e95b0ada.stex"
+path="res://.import/roka3.png-876c0d939724747ae0bf85bc13baa30a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/Transportador_1/roka3.png"
-dest_files=[ "res://.import/roka3.png-990b423c7a68704efabbeb67e95b0ada.stex" ]
+source_file="res://niveles/niveles_J/transportador_1/roka3.png"
+dest_files=[ "res://.import/roka3.png-876c0d939724747ae0bf85bc13baa30a.stex" ]
 
 [params]
 

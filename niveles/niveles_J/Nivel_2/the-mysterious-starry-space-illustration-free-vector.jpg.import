@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/the-mysterious-starry-space-illustration-free-vector.jpg-76fecece52922640213401811b7eec78.stex"
+path="res://.import/the-mysterious-starry-space-illustration-free-vector.jpg-9f9ce56af621b1c7f7fcadecc4a3f8d8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://niveles/niveles_J/Nivel_2/the-mysterious-starry-space-illustration-free-vector.jpg"
-dest_files=[ "res://.import/the-mysterious-starry-space-illustration-free-vector.jpg-76fecece52922640213401811b7eec78.stex" ]
+source_file="res://niveles/niveles_J/nivel_2/the-mysterious-starry-space-illustration-free-vector.jpg"
+dest_files=[ "res://.import/the-mysterious-starry-space-illustration-free-vector.jpg-9f9ce56af621b1c7f7fcadecc4a3f8d8.stex" ]
 
 [params]
 
